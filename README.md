@@ -1,4 +1,4 @@
-# SecretServerCustomReports
+# Secret Server Custom Reports
 
 You can add custom reports to Secret Server if you have Secret Server Enterprise or Enterprise Plus edition.
 
