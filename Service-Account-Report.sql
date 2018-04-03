@@ -24,4 +24,6 @@ FROM
 		cd.ScanItemTemplateId = sdtm.ScanItemTemplateId
 	AND 
 		cd.SecretDependencyTypeID = sdtm.SecretDependencyTypeId
+Where
+		cd.AccountName like '%' + #CUSTOMTEXT + '%'
 	ORDER BY cd.AccountName asc
