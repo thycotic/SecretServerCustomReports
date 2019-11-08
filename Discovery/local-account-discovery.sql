@@ -9,7 +9,7 @@ SELECT
 	END AS 'Password Last Set',
 	CASE
 		WHEN ca.ScanItemTemplateId =13 and ca.IsLocalAdministrator = 1 THEN 'Built-in Administrator'
-		WHEN ca.ScanItemTemplateId =13 and ca.IsLocalAdministrator = 0 THEN 'Standard User'
+		WHEN ca.ScanItemTemplateId =13 and ca.IsLocalAdministrator = 0 THEN 'Standard_User'
 	END AS 'Account Privilege',
 	CASE 
 		WHEN ca.ScanItemTemplateId =13 and ca.IsLocalAdministrator = 1 THEN 'Yes'
