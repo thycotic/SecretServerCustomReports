@@ -12,8 +12,8 @@ SELECT
 		WHEN ca.ScanItemTemplateId =13 and ca.IsLocalAdministrator = 0 THEN 'Standard_User'
 	END AS 'Account Privilege',
 	CASE 
-		WHEN ca.ScanItemTemplateId =13 and ca.IsLocalAdministrator = 1 THEN 'Yes'
-		WHEN ca.ScanItemTemplateId =13 and ca.IsLocalAdministrator =0 THEN 'No'
+		WHEN ca.ScanItemTemplateId =13 and ca.HasLocalAdminRights = 1 THEN 'Yes'
+		WHEN ca.ScanItemTemplateId =13 and ca.HasLocalAdminRights = 0 THEN 'No'
 	END AS 'Has Local Admin Rights',
 	ou.Path 'Organizational Unit'
 FROM 
